@@ -1,0 +1,7 @@
+name: CustomWeaponAPI
+version: '${project.version}'
+main: cn.afternode.mc.customweaponapi.CustomWeaponAPI
+api-version: 1.13
+authors: [ AFterNode ]
+description: CustomWeaponAPI
+website: https://afternode.cn/
