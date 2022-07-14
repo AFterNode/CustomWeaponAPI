@@ -58,7 +58,7 @@ public class ItemRegistry {
         return weaponMetas;
     }
 
-    @Nullab   le
+    @Nullable
     public static List<CustomItem> getPluginItems(Plugin plugin) {
         return registeredItems.get(plugin);
     }
