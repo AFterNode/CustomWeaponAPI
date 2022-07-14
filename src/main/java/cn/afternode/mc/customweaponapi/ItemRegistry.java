@@ -1,7 +1,9 @@
 package cn.afternode.mc.customweaponapi;
 
+import cn.afternode.mc.customweaponapi.events.CustomItemRegisterEvent.CustomItemRegisterEvent;
 import cn.afternode.mc.customweaponapi.items.CustomItem;
 import com.sun.istack.internal.Nullable;
+import org.bukkit.Bukkit;
 import org.bukkit.plugin.Plugin;
 
 import java.util.ArrayList;
@@ -25,6 +27,9 @@ public class ItemRegistry {
         }
 
         registeredList.add(item);
+
+        CustomItemRegisterEvent event = new CustomItemRegisterEvent(item, plugin);
+        Bukkit.getPluginManager().callEvent(event);
     }
 
     public static List<CustomItem> getRegisteredList() {
