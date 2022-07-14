@@ -65,6 +65,14 @@
         </repository>
     </repositories>
 
+    <distributionManagement>
+        <repository>
+            <id>github</id>
+            <name>CustomWeaponAPI</name>
+            <url>https://maven.pkg.github.com/AFterNode/CustomWeaponAPI</url>
+        </repository>
+    </distributionManagement>
+
     <dependencies>
         <dependency>
             <groupId>org.spigotmc</groupId>
@@ -72,5 +80,12 @@
             <version>1.13.2-R0.1-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.jetbrains/annotations -->
+        <dependency>
+            <groupId>org.jetbrains</groupId>
+            <artifactId>annotations</artifactId>
+            <version>23.0.0</version>
+        </dependency>
+
     </dependencies>
 </project>

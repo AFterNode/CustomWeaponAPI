@@ -3,11 +3,11 @@ package cn.afternode.mc.customweaponapi;
 import cn.afternode.mc.customweaponapi.events.CustomItemRegisterEvent.CustomItemRegisterEvent;
 import cn.afternode.mc.customweaponapi.items.CustomItem;
 import cn.afternode.mc.customweaponapi.items.CustomWeapon;
-import com.sun.istack.internal.Nullable;
 import org.bukkit.Bukkit;
 import org.bukkit.event.entity.ItemMergeEvent;
 import org.bukkit.inventory.meta.ItemMeta;
 import org.bukkit.plugin.Plugin;
+import org.jetbrains.annotations.Nullable;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -58,7 +58,7 @@ public class ItemRegistry {
         return weaponMetas;
     }
 
-    @Nullable
+    @Nullab   le
     public static List<CustomItem> getPluginItems(Plugin plugin) {
         return registeredItems.get(plugin);
     }
