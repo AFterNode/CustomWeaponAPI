@@ -2,6 +2,7 @@ package cn.afternode.mc.customweaponapi.items;
 
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
+import org.bukkit.event.Listener;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.ShapedRecipe;
 import org.bukkit.inventory.meta.ItemMeta;
@@ -12,7 +13,7 @@ import java.util.List;
 /**
  * Custom item
  */
-public abstract class CustomItem {
+public abstract class CustomItem implements Listener {
     public final String id;
     public final ItemStack stack;
     public ItemMeta meta;
