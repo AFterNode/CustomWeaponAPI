@@ -10,5 +10,11 @@ public abstract class CustomWeapon extends CustomItem {
     }
 
     @EventHandler
-    public abstract void onCustomWeaponAttack(CustomWeaponAttackEvent event);
+    public final void onCustomWeaponAttack(CustomWeaponAttackEvent event) {
+        if (event.getWeapon().meta == meta) {
+            onAttack(event);
+        }
+    }
+
+    public abstract void onAttack(CustomWeaponAttackEvent event);
 }
