@@ -18,6 +18,24 @@
     </properties>
     <url>https://afternode.cn/</url>
 
+    <licenses>
+        <license>
+            <name>MIT License</name>
+            <url>https://github.com/AFterNode/CustomWeaponAPI/blob/master/LICENSE</url>
+        </license>
+    </licenses>
+
+    <scm>
+        <url>https://github.com/AFterNode/CustomWeaponAPI</url>
+    </scm>
+
+    <developers>
+        <developer>
+            <name>H3xadecimal</name>
+            <url>https://github.com/tumuidle</url>
+        </developer>
+    </developers>
+
     <build>
         <plugins>
             <plugin>
